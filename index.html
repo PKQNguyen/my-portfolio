@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
+        integrity="sha512-/VYneElp5u4puMaIp/4ibGxlTd2MV3kuUIroR3NSQjS2h9XKQNebRQiyyoQKeiGE9mRdjSCIZf9pb7AVJ8DhCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"> -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+    </div>
+    
+    <main class="main">
+        <nav class="header">
+            <div class="logo">MI<br> NH</div>
+            <div class="navigation">
+                <a href="#about">ABOUT</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </nav>
+        <div class="container">
+            <section class="hero">
+                <div class="content">
+                    <h5 style="margin-right: auto;">I AM</h5>
+                    <h1><span>C</span><span>O</span><span>N</span><span>G</span> &nbsp; <span>M</span><span>I</span><span>N</span><span>H</span></h1>
+                    <h5 style="margin-left: auto;"> <span class="typing"></span><br> <br></h5>
+                </div>
+                <div class="left-sidebar">
+                    <a href="https://www.facebook.com/congminhh2222"><i class="ri-facebook-line"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="https://www.artstation.com/cong_minhh22"><i class="fa-brands fa-artstation"></i></a>
+                </div>
+                <div class="right-sidebar">
+                    <span>SCROLL</span>
+                    <div class="bar"></div>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <h5>MY</h5>
+                <h2><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span><span>&ensp;</span><span>M</span><span>E</span>
+                </h2>
+                <div class="container">
+                    <div class="about-container">
+                        <div class="about-img">
+                            <!-- <img src="images/Avatar.jpg" height="500" alt=""> -->
+                            <div></div>
+                            <div class="box">
+                                <img src="images/Avatar.jpg" height="500" alt="">
+                                <!-- <div><div class="img"></div></div>
+                                <div><div class="img"></div></div>
+                                <div><div class="img"></div></div>
+                                <div><div class="img"></div></div> -->
+                            </div>
+                            <div></div>
+                        </div>
+                        <div class="about-content">
+                            <!-- <h2>Cong Minh</h2> -->
+                            <h3>Hi, I'm Here To Help your next project!!!</h3>
+                            <p>
+                                I am a passionate Graphic Designer with over 1.5 years of experience in the field of graphic design. 
+                                The diversity in my projects has helped me develop creative skills and the ability to work flexibly across various design genres, from brand icons to advertising graphics and user interfaces. 
+                            </p>
+                            <p>
+                                Attention to detail and a solid understanding of design trends ensure that each of my projects is not only a work of art but also provides a great user experience. 
+                                Diligence, dedication, and perseverance are essential values that I bring to ensure each project is executed with high quality and customer satisfaction.
+                            </p>
+                            <div class="about-btn">
+                                <a href="#" class="btn">Download CV</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="projects" id="projects">
+                <h5>MY</h5>
+                <h2 style="margin-bottom: 50px;"><span>P</span><span>R</span><span>O</span><span>J</span><span>E</span><span>C</span><span>T</span><span>S</span>
+                </h2>
+                <div class="container" style="position: relative; height: 600px; width: 1200px; padding: 50px; margin: 0 auto;">
+                    <div class="slide" id="slide">
+                        <div class="item" data-index="1">
+                            <img src="./images/Project/Project 01/Thumbnail.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    <h1 style="font-size: 60px;">3D Video</h1>
+                                    <h1 style="font-size: 60px;">Of Books</h1>
+                                </div>
+                                <div class="desc">A 3D video of my Graduation Project.</div>
+                                <div class="view-detail">
+                                    <button><i class="ri-bookmark-fill"></i></button>
+                                    <button id="openModalBtn1">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-index="2">
+                            <img src="./images/Project/Project 02/Thumbnail.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    <h1 style="font-size: 60px;">3D Video</h1>
+                                    <h1 style="font-size: 60px;">Of Spear Animation</h1>
+                                </div>
+                                <div class="desc">A 3D video of my Graduation Project.</div>
+                                <div class="view-detail">
+                                    <button><i class="ri-bookmark-fill"></i></button>
+                                    <button id="openModalBtn2">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-index="3">
+                            <img src="./images/Project/Project 03/Lion Dance_01.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    <h1 style="font-size: 60px;">3D Lion Character</h1>
+                                    <h1 style="font-size: 60px;">Of "Tet"</h1>
+                                </div>
+                                <div class="desc">A 3D video of my Graduation Project.</div>
+                                <div class="view-detail">
+                                    <button><i class="ri-bookmark-fill"></i></button>
+                                    <button id="openModalBtn3">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-index="4">
+                            <img src="./images/Project/Project 04/Uniform_01.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    <h1 style="font-size: 60px;">3D Man</h1>
+                                    <h1 style="font-size: 60px;">Character</h1>
+                                </div>
+                                <div class="desc">A 3D video of my Graduation Project.</div>
+                                <div class="view-detail">
+                                    <button><i class="ri-bookmark-fill"></i></button>
+                                    <button id="openModalBtn4">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-index="5">
+                            <img src="./images/Project/Project 01/Thumbnail.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    <h1 style="font-size: 60px;">3D Video</h1>
+                                    <h1 style="font-size: 60px;">Of Books</h1>
+                                </div>
+                                <div class="desc">A 3D video of my Graduation Project.</div>
+                                <div class="view-detail">
+                                    <button><i class="ri-bookmark-fill"></i></button>
+                                    <button id="openModalBtn1">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-index="6">
+                            <img src="./images/Project/Project 02/Thumbnail.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    <h1 style="font-size: 60px;">3D Video</h1>
+                                    <h1 style="font-size: 60px;">Of Spear Animation</h1>
+                                </div>
+                                <div class="desc">A 3D video of my Graduation Project.</div>
+                                <div class="view-detail">
+                                    <button><i class="ri-bookmark-fill"></i></button>
+                                    <button id="openModalBtn2">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-index="7">
+                            <img src="./images/Project/Project 03/Lion Dance_01.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    <h1 style="font-size: 60px;">3D Lion Character</h1>
+                                    <h1 style="font-size: 60px;">Of "Tet"</h1>
+                                </div>
+                                <div class="desc">A 3D video of my Graduation Project.</div>
+                                <div class="view-detail">
+                                    <button><i class="ri-bookmark-fill"></i></button>
+                                    <button id="openModalBtn3">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-index="8">
+                            <img src="./images/Project/Project 04/Uniform_01.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    <h1 style="font-size: 60px;">3D Man</h1>
+                                    <h1 style="font-size: 60px;">Character</h1>
+                                </div>
+                                <div class="desc">A 3D video of my Graduation Project.</div>
+                                <div class="view-detail">
+                                    <button><i class="ri-bookmark-fill"></i></button>
+                                    <button id="openModalBtn4">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom__slider">
+                        <div class="navigation">
+                            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                        <div id="loading__bar" class="loading__bar"></div>
+                        <div id="pagination" class="pagination">01</div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <div class="left-contact">
+                    <h5>MY</h5>
+                    <h2><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span>
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptas ipsam ut nulla corrupti
+                        alias eaque quibusdam, animi voluptatibus possimus, accusantium sint minus. Dignissimos
+                        deleniti, consequuntur reiciendis unde ipsam architecto esse magni.</p>
+
+                    <h4>Phone</h4>
+                    <small>+84 369840592</small>
+
+                    <h4>E-mail</h4>
+                    <small>minhcongvippro@gmail.com</small>
+
+                    <h4>Social</h4>
+                    <small>
+                        <a href="https://www.facebook.com/congminhh2222"><i class="ri-facebook-line"></i></a>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                        <a href="https://www.artstation.com/cong_minhh22"><i class="fa-brands fa-artstation"></i></a>
+                    </small>
+                </div>
+                <div class="right-contact">
+
+                    <form action="#" id="form">
+                        <h2><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span>
+                            &nbsp; <span>F</span><span>O</span><span>R</span><span>M</span></h2>
+                        <input type="text" placeholder="Your name">
+                        <input type="number" placeholder="Your phone">
+                        <input type="email" placeholder="Your e-mail">
+                        <input type="text" placeholder="Message">
+                        <button type="submit" class="btn">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__content">
+                    Created By <span>PiKayQi</span> | &copy; 2024 All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Modals -->
+    <div id="myModal1" class="modal">
+        <div id="modal-content" class="modal-content">
+            <div class="video">
+                <iframe style="width: 100%;" height="315" src="https://www.youtube.com/embed/uJJfYM1qwnU?si=W2lC_fNgCMihnDVK&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <!-- <div class="video">
+                <video width="100%" height="100%" controls>
+                    <source src="./images/Project/Project 01/TVC OF BOOKS_02.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div> -->
+        </div>
+        <div class="button__back">
+            <button id="back-btn1" class="back-btn"><i class="fa-solid fa-angles-left"></i></button>
+        </div>
+    </div>
+    
+
+    <div class="background-gradient"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- ==== JS Files ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
