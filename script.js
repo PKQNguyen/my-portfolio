@@ -27,7 +27,7 @@ var typed = new Typed('.typing', {
 });
 
 /*========== Modal Custom ==========*/
-for (let index = 1; index < 5; index++) {
+for (let index = 1; index < 6; index++) {
     // Lấy phần tử modal
     const modal = document.getElementById('myModal' + index);
 
@@ -35,8 +35,9 @@ for (let index = 1; index < 5; index++) {
     const btn = document.getElementById("openModalBtn" + index);
 
     // Lấy phần tử span đóng modal
-
     const backBtn = document.getElementById("back-btn" + index);
+
+    var video = document.getElementById('youtube-video' + index);
 
     // Khi người dùng click vào nút, mở modal
     btn.onclick = function() {
@@ -48,6 +49,14 @@ for (let index = 1; index < 5; index++) {
     backBtn.onclick = function() {
         modal.style.width = "0%";
         document.body.style.overflow = "auto"; // Cho phép cuộn trang trở lại
+        // Kiểm tra nếu video đang chạy
+        if (!video.paused && video != undefined) {
+            // Nếu video đang chạy, tạm dừng video
+            video.pause();
+        } else {
+            // Nếu video đã tạm dừng, tiếp tục phát video
+            video.play();
+        }
     }
 
     // Khi người dùng click bên ngoài modal, đóng modal
