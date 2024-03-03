@@ -583,15 +583,27 @@ section{
 }
 
 .box {
-    width: 420px; /* Thay đổi kích thước theo nhu cầu */
-    height: 420px; /* Thay đổi kích thước theo nhu cầu */
+    width: 424px; /* Thay đổi kích thước theo nhu cầu */
+    height: 424px; /* Thay đổi kích thước theo nhu cầu */
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    position: relative;
+    background-color: #eee;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    height: 420px;
+    border: 1px solid #eee;
     background: url('images/Avatar.jpg') no-repeat center center;
     background-position-x: -70px;
     background-position-y: 0;
     background-size: 500px;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    box-shadow: 0 0 10px #eee;
-    border-radius: 10px;
 }
 
 .box>img {
