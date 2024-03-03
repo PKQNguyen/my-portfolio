@@ -127,7 +127,7 @@
                                     <h1 style="font-size: 60px;">Spear</h1>
                                     <h1 style="font-size: 60px;">Dance</h1>
                                 </div>
-                                <div class="desc">A 3D video of my Graduation Project.</div>
+                                <div class="desc">My animation exercise in Blender.</div>
                                 <div class="view-detail">
                                     <button><i class="ri-bookmark-fill"></i></button>
                                     <button id="openModalBtn3">View Detail</button>
@@ -141,7 +141,7 @@
                                     <h1 style="font-size: 60px;">Lion</h1>
                                     <h1 style="font-size: 60px;">Dance</h1>
                                 </div>
-                                <div class="desc">a character made in Blender.</div>
+                                <div class="desc">A character made in Blender.</div>
                                 <div class="view-detail">
                                     <button><i class="ri-bookmark-fill"></i></button>
                                     <button id="openModalBtn4">View Detail</button>
@@ -155,7 +155,7 @@
                                     <h1 style="font-size: 60px;">Uniform</h1>
                                     <!-- <h1 style="font-size: 60px;">Character</h1> -->
                                 </div>
-                                <div class="desc">a portrait made in Blender.</div>
+                                <div class="desc">A portrait made in Blender.</div>
                                 <div class="view-detail">
                                     <button><i class="ri-bookmark-fill"></i></button>
                                     <button id="openModalBtn5">View Detail</button>
@@ -178,9 +178,9 @@
                     <h5>MY</h5>
                     <h2><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span>
                     </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptas ipsam ut nulla corrupti
-                        alias eaque quibusdam, animi voluptatibus possimus, accusantium sint minus. Dignissimos
-                        deleniti, consequuntur reiciendis unde ipsam architecto esse magni.</p>
+                    <p>My passion lies in creating unique and creative graphic works, 
+                        and I am always seeking opportunities to challenge and develop my skills. 
+                        I am delighted to collaborate and provide the best graphic solutions for your project!</p>
 
                     <h4>Phone</h4>
                     <small>+84 369840592</small>
@@ -191,19 +191,18 @@
                     <h4>Social</h4>
                     <small>
                         <a href="https://www.facebook.com/congminhh2222"><i class="ri-facebook-line"></i></a>
-                        <a href="#"><i class="ri-instagram-line"></i></a>
+                        <!-- <a href="#"><i class="ri-instagram-line"></i></a> -->
                         <a href="https://www.artstation.com/cong_minhh22"><i class="fa-brands fa-artstation"></i></a>
                     </small>
                 </div>
                 <div class="right-contact">
-
                     <form action="#" id="form">
                         <h2><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span>
                             &nbsp; <span>F</span><span>O</span><span>R</span><span>M</span></h2>
-                        <input type="text" placeholder="Your name">
-                        <input type="number" placeholder="Your phone">
-                        <input type="email" placeholder="Your e-mail">
-                        <input type="text" placeholder="Message">
+                        <input id="name" type="text" placeholder="Your name">
+                        <input id="phone" type="number" placeholder="Your phone">
+                        <input id="email" type="email" placeholder="Your e-mail">
+                        <input id="message" type="text" placeholder="Message">
                         <button type="submit" class="btn">SEND MESSAGE</button>
                     </form>
                 </div>
@@ -234,6 +233,12 @@
     </div>
     <div id="myModal2" class="modal">
         <div id="modal-content" class="modal-content">
+            <div class="video">
+                <video controls width="640" height="360">
+                    <source src="images/Project/Project 05/Eternal Ascent_Fisherman with sound.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+            </div>
             <div>
                 <img style="object-fit: contain;" src="./images/Project/Project 05/thumbnail.jpg" alt="">
             </div>
@@ -298,7 +303,10 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <!-- ==== JS Files ==== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <!-- Email Contact -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- ===== Notification ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
 </body>
 

@@ -37,8 +37,6 @@ for (let index = 1; index < 6; index++) {
     // Lấy phần tử span đóng modal
     const backBtn = document.getElementById("back-btn" + index);
 
-    var video = document.getElementById('youtube-video' + index);
-
     // Khi người dùng click vào nút, mở modal
     btn.onclick = function() {
         modal.style.width = "100%";
@@ -49,14 +47,6 @@ for (let index = 1; index < 6; index++) {
     backBtn.onclick = function() {
         modal.style.width = "0%";
         document.body.style.overflow = "auto"; // Cho phép cuộn trang trở lại
-        // Kiểm tra nếu video đang chạy
-        if (!video.paused && video != undefined) {
-            // Nếu video đang chạy, tạm dừng video
-            video.pause();
-        } else {
-            // Nếu video đã tạm dừng, tiếp tục phát video
-            video.play();
-        }
     }
 
     // Khi người dùng click bên ngoài modal, đóng modal
@@ -70,18 +60,44 @@ for (let index = 1; index < 6; index++) {
 
 /*========== Send Email Set Up ==========*/
 const form = document.querySelector('#form');
-// Email.send({
-//     Host : "smtp.elasticemail.com",
-//     Username : "username",
-//     Password : "password",
-//     To : 'them@website.com',
-//     From : "you@isp.com",
-//     Subject : "This is the subject",
-//     Body : "And this is the body"
-// }).then(
-//   message => alert(message)
-// );
+const fullname = document.getElementById('name');
+const phone = document.getElementById('phone');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
 
+function sendEmail() {
+    const bodyMessage = `Full Name: ${fullname.value}<br> Email: ${email.value}<br> Phone Number: ${phone.value}<br> Message: ${message.value}`;
+
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "minhhoaloitv@gmail.com",
+        Password : "03304C77457FCD65AD00EBFBC9AC19C39CFD",
+        To : email.value,
+        From : "minhhoaloitv@gmail.com",
+        Subject : "This is email contact",
+        Body : bodyMessage
+    }).then(
+        message => {
+            if(message == "OK") {
+                Swal.fire({
+                    title: "Success!",
+                    text: "Message sent successfully!",
+                    icon: "success"
+                    });
+                email.value = "";
+                phone.value = "";
+                fullname.value = "";
+                message.value = "";
+            }
+        }
+    );
+}
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    sendEmail();
+});
 
 
 /*========== scroll sections active link ==========*/
