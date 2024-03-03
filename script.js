@@ -84,10 +84,6 @@ function sendEmail() {
                     text: "Message sent successfully!",
                     icon: "success"
                     });
-                email.value = "";
-                phone.value = "";
-                fullname.value = "";
-                message.value = "";
             }
         }
     );
@@ -97,6 +93,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     sendEmail();
+    form.reset();
 });
 
 
