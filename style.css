@@ -562,13 +562,6 @@ section{
 
 .about-container .about-img {
     flex: 1;
-    position: relative;
-    left: -90px;
-    bottom: -40px;
-    /* box-shadow: 0 0 10px #eee; */
-    /* background-image: url('./images/Avatar.jpg');
-    background-repeat: no-repeat;
-    background-position: center; */
 }
 
 
@@ -590,17 +583,15 @@ section{
 }
 
 .box {
-    width: 310px;
-    height: 310px;
-    position: relative;
-    transform: translate(50%, 0) rotate(45deg);
+    width: 420px; /* Thay đổi kích thước theo nhu cầu */
+    height: 420px; /* Thay đổi kích thước theo nhu cầu */
+    background: url('images/Avatar.jpg') no-repeat center center;
+    background-position-x: -70px;
+    background-position-y: 0;
+    background-size: 500px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     box-shadow: 0 0 10px #eee;
-    /* border-radius: 31% 69% 46% 54% / 59% 53% 47% 41% ; */
     border-radius: 10px;
-    overflow: hidden;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .box>img {
