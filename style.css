@@ -135,12 +135,19 @@ nav .logo{
     margin-right: auto;
 }
 
-.navigation:hover a{
+.navbar:hover a{
     filter: blur(1px);
 }
 
-.navigation a:hover{
+.navbar a:hover{
     filter: blur(0);
+}
+
+#menu-icon {
+    font-size: 23px;
+    color: #e4e4e4;
+    display: none;
+    cursor: pointer;
 }
   
 section{
@@ -700,6 +707,10 @@ section{
     margin-top: 40px;
     line-height: 1.8;
     text-align: center;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .left-contact h4{
@@ -861,4 +872,80 @@ section{
     color: orange;
     font-weight: bold;
     font-style: italic;
+}
+
+/* Responsive Website */
+@media (max-width: 768px) {
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 20px 3%;
+        background-color: #151515cb;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 20px;
+        margin: 24px 0;
+    }
+}
+
+@media (max-width: 550px) {
+    nav {
+        padding: 10px 20px;
+    }
+
+    .hero .content {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero .left-sidebar {
+        left: 20px;
+    }
+
+    .hero .right-sidebar {
+        right: 20px;
+    }
+
+    .about .container {
+        margin-top: 10px;
+    }
+
+    .about .about-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .contact {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .contact .contact-social-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-contact {
+        margin: 15px 0;
+    }
 }

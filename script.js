@@ -96,6 +96,15 @@ form.addEventListener('submit', (e) => {
     form.reset();
 });
 
+/*========== menu icon navbar ==========*/
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('fa-xmark');
+    navbar.classList.toggle('active');
+}
+
 
 /*========== scroll sections active link ==========*/
 let sections = document.querySelectorAll('section');
@@ -122,8 +131,8 @@ window.onscroll = () => {
     header.classList.toggle('sticky', window.scrollY > 100);
 
     /*========== remove menu icon navbar when click navbar link (scroll) ==========*/
-    // menuIcon.classList.remove('bx-x');
-    // navbar.classList.remove('active');
+    menuIcon.classList.remove('fa-xmark');
+    navbar.classList.remove('active');
 };
 
 gsap.registerPlugin(ScrollTrigger);
