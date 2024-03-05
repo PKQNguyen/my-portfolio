@@ -797,6 +797,10 @@ section{
     background-color: rgba(0,0,0,0.6);
     transition: .5s;
   }
+
+  .modal.active {
+    width: 100%;
+  }
   
   .modal-content {
     background-color: #000;
@@ -948,10 +952,6 @@ section{
     .right-contact {
         margin: 15px 0;
     }
-
-    .projects {
-        display: none;
-    }
 }
 
 @media (max-width: 400px) {
@@ -987,7 +987,85 @@ section{
         background-position-x: -63px;
     }
 
+    .projects .container {
+        width: 100% !important;
+        overflow: hidden;
+    }
+
+    .projects .slide .item:nth-child(2) {
+        left: 60%;
+    }
+
+    .projects .slide .item .name h1 {
+        font-size: 40px !important;
+    }
+
+    .projects .slide .item .desc {
+        -webkit-line-clamp: 2;
+        margin-right: 80px;
+        font-size: 12px;
+    }
+
+    .projects .slide .item .view-detail {
+        margin-top: calc(100% - 220px);
+    }
+
+    .projects .slide .item .view-detail button:nth-child(1) {
+        display: none;
+    }
+
+    .projects .slide .item .view-detail button:nth-child(2) {
+        width: 110px;
+        height: 30px;
+        line-height: 4px;
+        font-size: 10px;
+        padding: 15px 15px;
+    }
+
+    .projects .bottom__slider {
+        left: 10px;
+        width: 100%;
+    }
+
+    .projects .bottom__slider .navigation button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .bottom__slider .pagination {
+        font-size: 20px;
+    }
+
     .footer__content {
         font-size: 8px;
+    }
+
+    .modal {
+        width: 100%;
+        height: 0%;
+        top: inherit;
+        bottom: 0;
+    }
+
+    .modal.active {
+        height: 100%;
+    }
+
+    .modal .modal-content {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 10%;
+    }
+
+    .modal .button__back {
+        top: 2%;
+        right: 45%;
+        transform: rotate(-90deg);
+    }
+
+    .modal .back-btn::before {
+        width: 0;
+        height: 0;
     }
 }

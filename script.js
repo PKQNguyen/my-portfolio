@@ -39,20 +39,20 @@ for (let index = 1; index < 6; index++) {
 
     // Khi người dùng click vào nút, mở modal
     btn.onclick = function() {
-        modal.style.width = "100%";
+        modal.classList.toggle('active');
         document.body.style.overflow = "hidden"; // Chặn cuộn trang
     }
 
     // Khi người dùng click vào nút đóng (x), đóng modal
     backBtn.onclick = function() {
-        modal.style.width = "0%";
+        modal.classList.remove('active');
         document.body.style.overflow = "auto"; // Cho phép cuộn trang trở lại
     }
 
     // Khi người dùng click bên ngoài modal, đóng modal
     window.onclick = function(event) {
         if (event.target == modal) {
-            modal.style.width = "0%";
+            modal.classList.remove('active');
             document.body.style.overflow = "auto"; // Cho phép cuộn trang trở lại
         }
     }
