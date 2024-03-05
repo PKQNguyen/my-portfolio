@@ -953,3 +953,41 @@ section{
         display: none;
     }
 }
+
+@media (max-width: 400px) {
+    .hero h1 span {
+        font-size: 90px;
+    }
+
+    .hero h5 {
+        font-size: 11px;
+    }
+
+    .hero .left-sidebar a {
+        font-size: 13px;
+    }
+
+    .hero .right-sidebar span {
+        font-size: 10px;
+    }
+
+    .projects h2 span, .contact h2 span, .about h2 span {
+        font-size: 32px;
+    }
+
+    .box {
+        width: 324px;
+        height: 324px;
+    }
+
+    .box::after {
+        width: 320px;
+        height: 320px;
+        background-size: 400px;
+        background-position-x: -63px;
+    }
+
+    .footer__content {
+        font-size: 8px;
+    }
+}
