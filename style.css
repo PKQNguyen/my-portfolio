@@ -1002,7 +1002,7 @@ section{
 
     .projects .slide .item .desc {
         -webkit-line-clamp: 2;
-        margin-right: 80px;
+        padding-right: 100px;
         font-size: 12px;
     }
 
