@@ -27,7 +27,7 @@ var typed = new Typed('.typing', {
 });
 
 /*========== Modal Custom ==========*/
-for (let index = 1; index < 6; index++) {
+for (let index = 1; index < 7; index++) {
     // Lấy phần tử modal
     const modal = document.getElementById('myModal' + index);
 
