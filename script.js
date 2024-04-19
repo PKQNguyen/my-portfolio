@@ -20,7 +20,7 @@ document.getElementById('prev').onclick = () => {
 }
 
 var typed = new Typed('.typing', {
-    strings: ['3D ARTIST', '3D ANIMATOR', '3D ARTIST', '3D ANIMATOR'],
+    strings: ['3D ARTIST', '3D ARTIST', '3D ARTIST', '3D ARTIST'],
     typeSpeed: 150,
     BackSpeed: 100,
     loop: true
